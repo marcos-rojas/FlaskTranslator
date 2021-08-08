@@ -1,1 +1,6 @@
-#FlaskTranslator
+# FlaskTranslator
+This is an application which translates text to a desired language. It was been build with Python by using Flask "mini-framework" based in Building real world application with Python. The application run Flask written in app.py file. The way in which it call render_template() allow us to inject content into HTML templates (Jinja from Flask).
+
+I've learnt to use @app.route() to connect functions to routes (2 routes supported in this case for GET and POST methods). Because it was an introductory app, we use Translator service from Azure Cognitive Services (key is personal) through HTTP request. This service allow us to build intelligent applications (this website detects language automatically) rather than creat my own machine learning model (which is something I'm focus to do further). There are some libraries which has been used (flask, requests and dotenv for key management) as well as Python virtual environment which ensures that versioning doesn't affect development.
+
+I think something to highlight is the concept of template which allow us to write HTML for dynamic information (most of HTML from webpages is static). Here, Jinja is the template engine which uses a syntax like {{name}} to connect both (app routing in app.py and functions/methods that return the render_template() based on the route user want to access).
